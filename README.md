@@ -32,7 +32,7 @@ Sou formado em Jogos Digitais e atualmente curso Desenvolvimento Full Stack. Ten
 
 Este projeto pode ser visualizado online via GitHub Pages:
 
-🔗 [Clique aqui para acessar o portfólio/ COM imagens] https://idealbruno.github.io/About/
+🔗 [Clique aqui para acessar o portfólio/ COM imagens] https://idealbruno.github.io/PORTFOLIO/
 
 
 
