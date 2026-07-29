@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="IMG/cafe1about.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CAFÉ</title>
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <a href="#" class="logo">
+          <img src="img/coffee.png" alt="logo" />
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#about">Sobre</a>
+          <a href="#menu">Menu</a>
+          <a href="#review">Avaliações</a>
+          <a href="#address">Endereço</a>
+        </nav>
+        <div class="icons">
+          <div class="search-wrapper">
+            <button class="search-toggle" type="button" aria-label="Buscar pedido">
+              <img
+                id="campobuscar"
+                width="30"
+                height="30"
+                src="https://img.icons8.com/material-rounded/30/FFFFFF/search.png"
+                alt="search"
+              />
+            </button>
+            <div class="search-box" id="search-box">
+              <input
+                type="text"
+                id="buscar-pedido"
+                placeholder="Buscar pedido"
+                aria-label="Buscar pedido"
+              />
+            </div>
+          </div>
+          <a href="carrinho.html">
+          <img
+            id="icone-carrinho"
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/FFFFFF/shopping-cart--v1.png"
+            alt="shopping-cart--v1"
+          />
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <div class="home-container">
+      <section id="#home">
+        <div class="content">
+          <h3>CODE COM O MELHOR CAFÉ DA REGIÃO</h3>
+          <p>
+            Se você está procurando o melhor café da região, prepare-se para uma
+            experiência que vai muito além de uma simples xícara. ☕
+          </p>
+          <a href="#menu" class="btn">Pegue o seu Agora</a>
+        </div>
+      </section>
+    </div>
+    <section class="about" id="about">
+      <h2 class="title">Sobre <span>Nós</span></h2>
+      <div class="row">
+        <div class="container-img">
+          <img src="img/cafe1about.jpg" alt="coffee" />
+        </div>
+        <div class="content">
+          <h3>O Que Faz Nosso Café Especial</h3>
+          <p>
+            No coração da cidade, o aroma marcante dos grãos recém-moídos já
+            conquista quem passa pela porta. Cada detalhe é pensado com carinho:
+            desde a seleção rigorosa dos grãos especiais até o cuidado no
+            preparo, feito por baristas apaixonados pelo que fazem.
+          </p>
+          <p>
+            O resultado? Um café encorpado, equilibrado e com notas que
+            surpreendem — seja você fã de um espresso intenso, um cappuccino
+            cremoso ou um café coado mais suave e aromático. Além disso, o
+            ambiente acolhedor torna o momento ainda mais especial, perfeito
+            para conversar com amigos, trabalhar ou simplesmente relaxar. Mais
+            do que servir café, o melhor café da região oferece uma verdadeira
+            experiência: sabor, qualidade e aquele toque artesanal que faz toda
+            a diferença. Venha provar e descubra por que todo
+          </p>
+          <a href="#" class="btn">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+
+<section class="menu" id="menu">
+  <h2 class="title">Nosso <span>Menu</span></h2>
+
+  <div class="box-container">
+
+    <!-- ITEM 1 -->
+    <div class="box">
+      <img src="img/cha.jpg" alt="item-1" />
+      <h3>Chá</h3>
+      <div class="price">R$ 15,00 <span>R$ 20,99</span></div>
+
+      <a href="carinho.html"
+         class="btn adicionar"
+         data-nome="Chá"
+         data-preco="15.00">
+         Adicionar ao Carrinho
+      </a>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="box">
+      <img src="img/cafecomleite.jpg" alt="item-2" />
+      <h3>Café Com Leite</h3>
+      <div class="price">R$ 12,00 <span>R$ 15,99</span></div>
+
+      <a href="carinho.html"
+         class="btn adicionar"
+         data-nome="Café Com Leite"
+         data-preco="12.00">
+         Adicionar ao Carrinho
+      </a>
+    </div>
+
+    <!-- ITEM 3 -->
+    <div class="box">
+      <img src="img/cremoso.jpeg" alt="item-3" />
+      <h3>Café Cremoso</h3>
+      <div class="price">R$ 17,00 <span>R$ 22,99</span></div>
+
+      <a href="#"
+         class="btn adicionar"
+         data-nome="Café Cremoso"
+         data-preco="17.00">
+         Adicionar ao Carrinho
+      </a>
+    </div>
+
+    <!-- ITEM 4 -->
+    <div class="box">
+      <img src="img/cafegelado.jpeg" alt="item-4" />
+      <h3>Café Gelado</h3>
+      <div class="price">R$ 15,00 <span>R$ 20,99</span></div>
+
+      <a href="#"
+         class="btn adicionar"
+         data-nome="Café Gelado"
+         data-preco="15.00">
+         Adicionar ao Carrinho
+      </a>
+    </div>
+
+    <!-- ITEM 5 -->
+    <div class="box">
+      <img src="img/cafe1.jpeg" alt="item-5" />
+      <h3>Café Preto</h3>
+      <div class="price">R$ 8,00 <span>R$ 10,99</span></div>
+
+      <a href="#"
+         class="btn adicionar"
+         data-nome="Café Preto"
+         data-preco="8.00">
+         Adicionar ao Carrinho
+      </a>
+    </div>
+
+    <!-- ITEM 6 -->
+    <div class="box">
+      <img src="img/Capuccino.jpg" alt="item-6" />
+      <h3>Cappuccino</h3>
+      <div class="price">R$ 22,00 <span>R$ 28,00</span></div>
+
+      <a href="carinho.html"
+         class="btn adicionar"
+         data-nome="Cappuccino"
+         data-preco="22.00">
+         Adicionar ao Carrinho
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+    <section class="revie" id="revie">
+      <h2 class="title">Nossos <span>Clientes</span></h2>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="img/aspas7.jpg" width="20" alt="comentario" />
+          <p>
+            “Sou apaixonado por café e posso dizer que esse lugar realmente se
+            destaca. Dá para sentir a qualidade dos grãos em cada gole. O
+            espresso é forte, aromático e muito bem preparado. Recomendo
+            demais!” ☕
+          </p>
+          <img
+            src="img/brunocliente.jpg"
+            width="100 58px"
+            alt="foto-cliente"
+            class="user"
+          />
+          <h3>Bruno rodrigues</h3>
+          <div class="star">
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            /><img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/1A1A1A/star-half-empty.png "
+              alt="star-half-empty"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/aspas7.jpg" width="20" alt="comentario" />
+          <p>
+            “Simplesmente o melhor café que já provei! O sabor é intenso na
+            medida certa e o cappuccino é super cremoso. O atendimento é
+            impecável e o ambiente é muito aconchegante. Sempre que posso, passo
+            lá!”
+          </p>
+          <img
+            src="img/Steve-jobs-.jpg"
+            width="100px 58px"
+            alt="foto-cliente"
+            class="user"
+          />
+          <h3>Steve</h3>
+          <div class="star">
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            /><img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/1A1A1A/star-half-empty.png "
+              alt="star-half-empty"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/aspas7.jpg" width="20" alt="comentario" />
+          <p>
+            “Além do café ser maravilhoso, o atendimento faz toda a diferença.
+            Me senti super bem recebida. É o tipo de lugar que você vai uma vez
+            e quer voltar sempre. Virou meu cantinho favorito da região!” ☕✨
+          </p>
+          <img
+            src="img/cliente3.png"
+            width="100px 58px"
+            alt="foto-cliente"
+            class="user"
+          />
+          <h3>Dev computador</h3>
+          <div class="star">
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            /><img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+              alt="star--v1"
+            />
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/1A1A1A/star-half-empty.png "
+              alt="star-half-empty"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="address" id="address">
+      <h2 class="title">Nosso <span>Endereço</span></h2>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8610.231999529358!2d-60.01548079138717!3d-3.091747179574421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b3efb1686bf%3A0xbb5ebfc274b133f9!2sCafe%20de%20casa!5e0!3m2!1spt-BR!2sbr!4v1753314791102!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="footer">
+      <div class="share">
+        <img
+          width="30"
+          height="30"
+          src="https://img.icons8.com/ios/30/instagram-new.png"
+          alt="instagram-new"
+        />
+        <img
+          width="30"
+          height="30"
+          src="https://img.icons8.com/windows/30/facebook-new.png"
+          alt="facebook-new"
+        />
+
+        <img
+          width="30"
+          height="30"
+          src="https://img.icons8.com/ios/30/twitterx--v2.png"
+          alt="twitterx--v2"
+        />
+      </div>
+
+      <div class="credit">
+        <span>Criado por <a href="#">Bruno Rodrigues</a> | Todos os direitos reservados</span>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

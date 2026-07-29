@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <style>
+      :root {
+        --bg: #0f0f12;
+        --bg-soft: #17171d;
+        --card: rgba(255,255,255,0.06);
+        --card-border: rgba(255,255,255,0.12);
+        --text: #fffdf8;
+        --muted: #b8b5ad;
+        --accent: #d58c1e;
+        --accent-hover: #d6b27d;
+        --shadow: 0 20px 45px rgba(0,0,0,0.35);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at top, rgba(197,157,95,0.18), transparent 25%),
+          linear-gradient(180deg, #070708, #1a1a1f 38%, #0d0d11);
+        color: var(--text);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('img/backgroud.jpeg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .carrinho {
+        width: min(760px, 100%);
+        margin: 0;
+        padding: 26px 24px;
+        background: rgba(25, 25, 31, 0.82);
+        border: 1px solid var(--card-border);
+        border-radius: 20px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(6px);
+      }
+
+      .carrinho h2 {
+        font-size: 1.9rem;
+        margin-bottom: 10px;
+        color: var(--text);
+      }
+
+      .carrinho p {
+        color: var(--muted);
+        margin-bottom: 18px;
+        line-height: 1.4;
+      }
+
+      #lista-carrinho {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 18px 0 20px;
+      }
+
+      #lista-carrinho li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 14px 15px;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 12px;
+        color: var(--text);
+      }
+
+      #lista-carrinho li span {
+        flex: 1;
+        font-size: 0.98rem;
+      }
+
+      .remover-item {
+        border: none;
+        background: var(--accent);
+        color: #141414;
+        padding: 8px 10px;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .remover-item:hover {
+        background: var(--accent-hover);
+        transform: translateY(-1px);
+      }
+
+      #total {
+        margin-top: 10px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(255,255,255,0.12);
+        color: var(--text);
+        font-size: 1.1rem;
+      }
+
+      .cart-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+      }
+
+      #botao-pagar {
+        border: none;
+        border-radius: 999px;
+        background: linear-gradient(180deg, var(--accent), #f2960d);
+        color: #1b140d;
+        padding: 12px 18px;
+        font-size: 0.95rem;
+        font-weight: 800;
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgba(197,157,95,0.25);
+        transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
+      }
+
+      #botao-pagar:hover:not(:disabled) {
+        transform: translateY(-1px);
+        filter: brightness(1.05);
+      }
+
+      #botao-pagar:disabled {
+        cursor: not-allowed;
+        opacity: 0.4;
+        box-shadow: none;
+      }
+
+      .empty-state {
+        border-radius: 12px;
+        padding: 18px;
+        background: rgba(255,255,255,0.04);
+        color: var(--muted);
+        border: 1px dashed rgba(255,255,255,0.16);
+      }
+    </style>
+</head>
+<body>
+    <div class="carrinho">
+  <h2>Carrinho</h2>
+
+  <ul id="lista-carrinho"></ul>
+
+  <h3 id="total">Total: R$ 0,00</h3>
+
+  <div class="cart-actions">
+    <button type="button" id="botao-pagar" disabled>Pagar</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

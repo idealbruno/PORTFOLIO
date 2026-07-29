@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styless.css" />
+  <title>cabeleireiro</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-texto"> <span class="text">✂</span> O homem moderno</h2>
+      </a>
+      <a href="#" class="nav-item">Home</a>
+      <a href="#servico" class="nav-item">Serviço</a>
+      <a href="#Galeria" class="nav-item">Galeria</a>
+      <a href="#avaliacao" class="nav-item">Avaliação</a>
+      <a href="#contato" class="nav-item">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="section-content">
+        <div class="hero-details">
+          <h2 class="subltitlte">
+            Dominando a arte do Cuidado Pessoal Moderno
+          </h2>
+
+          <p class="description">
+            Experimente precisão, estilo e tradição em cada corte. Sua jornada
+            rumo ao visual perfeito começa aqui.
+          </p>
+
+          <div class="buttons">
+            <button type="button" id="abrirFormulario" class="button contact-us">
+              Agende seu horário
+            </button>
+          </div>
+
+          <div id="formularioContainer" style="display: none;">
+            <form id="agendamentoForm" class="agendamento-form">
+              <input type="text" id="nome" placeholder="Seu nome" required>
+
+              <input type="date" id="data" required>
+
+              <input type="time" id="hora" required>
+
+              <button type="submit" class="button contact-us">
+                Confirmar Agendamento
+              </button>
+            </form>
+          </div>
+
+          <div id="mensagem"></div>
+
+          <div class="hero-img-wrapper">
+            <img src="img/barbearia-profissional.jpg" alt="Barbeiro realizando um corte de cabelo em um cliente"
+              class="hero-img" />
+          </div>
+          </section>
+
+          <section class="menu-section" id="servico">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="section-content">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <div class="menu-details">
+                    <h3 class="name">Corte de Cabelo Clássico</h3>
+                    <span>$45</span>
+                    <ul class="menu-description">
+                      <li> <span class="texto">☑</span> Consulta Especializada</li>
+                      <li> <span class="texto">☑</span> Trabalho De Precisão Com Tesoura e Máquina</li>
+                      <li> <span class="texto">☑</span> Estilo e Acabamento Clássico</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="menu-item">
+                  <div class="menu-details">
+                    <h3 class="name">Experiência Completa</h3>
+                    <span>$65</span>
+                    <ul class="menu-description">
+                      <li> <span class="texto">☑</span> Inclui corte de cabelo clássico</li>
+                      <li> <span class="texto">☑</span> Inclui Aparar e Barbear a Barba</li>
+                      <li> <span class="texto">☑</span> Barbear Relaxante com Toalha Quente</li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="menu-item">
+                  <div class="menu-details">
+                    <h3 class="name">Aparar e Modelar</h3>
+                    <span>$25</span>
+                    <ul class="menu-description">
+                      <li> <span class="texto">☑</span> Modelagem detalhada com acabamento preciso.</li>
+                      <li> <span class="texto">☑</span> Tratamento Com Toalha Quente</li>
+                      <li> <span class="texto">☑</span> Aplicação De Bálsamo Para Barba</li>
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </section>
+
+          <section class="gallery-section" id="Galeria">
+            <h2 class="section-tittle">Galeria</h2>
+            <div class="section-content">
+              <ul class="gallery-list">
+                <li class="gallery-item">
+                  <img src="img/1.png" alt="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="img/2.png" alt="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="img/3.png" alt="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="img/4.png" alt="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="img/5.png" alt="gallery-image">
+                </li>
+                <li class="gallery-item">
+                  <img src="img/6.png" alt="gallery-image">
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="testimonial-section" id="avaliacao">
+            <h2 class="section-title">Avaliaçao</h2>
+            <p class="title">O Que Nossos Clientes Compram</p>
+            <div class="section-content">
+              <div class="slider-container-swiper">
+                <div class="slider-wrapper">
+                  <ul class="testimonial-list swiper-wrapper">
+                    <li class="testimonial swiper-slide">
+                      <i class="feedback">"De longe, o melhor corte de cabelo que já tive. A atenção aos detalhes é
+                        incomparável. Saí de lá me sentindo um homem novo."</i>
+                      <h3 class="nome">-Jaime D.</h3>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                      <i class="feedback">"O ambiente é incrível – clássico, mas moderno. Os barbeiros são verdadeiros
+                        profissionais e artistas. Recomendo muito a experiência completa."</i>
+                      <h3 class="nome">-David L:</h3>
+                    </li>
+
+                    <li class="testimonial swiper-slide">
+                      <i class="feedback">"Frequento este lugar desde a inauguração. Serviço consistente e de alta
+                        qualidade
+                        sempre. É mais do que um corte de cabelo, é uma experiência."</i>
+                      <h3 class="nome">-Michael P.</h3>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="address" id="contato">
+            <h2 class="title-address">NOSSO <span>Endereço</span></h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8610.231999529358!2d-60.01548079138717!3d-3.091747179574421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c1b3efb1686bf%3A0xbb5ebfc274b133f9!2sCafe%20de%20casa!5e0!3m2!1spt-BR!2sbr!4v1753314791102!5m2!1spt-BR!2sbr"
+              width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="address-content">
+              <p class="text-address">Escolha um horário que lhe seja conveniente. Nossos barbeiros experientes estão
+                prontos para lhe proporcionar uma experiência de cuidado pessoal de primeira classe. Aguardamos a sua
+                visita!</p>
+              <ul class="contact-info-list">
+                <li class="contact-info">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                </li>
+                <li class="contact-info">
+                  <p>📞 (92) 9912-7281</p>
+                </li>
+                <li class="contact-info">
+                  <p>📅Segunda / Sabado 10:00 AM - 18:00 PM</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+  </main>
+
+
+  <script>
+    const form = document.getElementById("agendamentoForm");
+    const mensagem = document.getElementById("mensagem");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const data = document.getElementById("data").value;
+      const hora = document.getElementById("hora").value;
+
+      mensagem.textContent = `Agendado para ${nome} em ${data} às ${hora}.`;
+
+      form.reset();
+    });
+
+    const botao = document.getElementById("abrirFormulario");
+const formulario = document.getElementById("formularioContainer");
+
+botao.addEventListener("click", function () {
+  if (formulario.style.display === "none" || formulario.style.display === "") {
+    formulario.style.display = "block";
+  } else {
+    formulario.style.display = "none";
+  }
+});
+    
+  </script>
+</body>
+
+</html>

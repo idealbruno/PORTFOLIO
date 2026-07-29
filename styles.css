@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+  background: #f40404fb;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff9500;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.logo {
+  color: #5c0202ee;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #e2e0e0df;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #111111;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff7b00;
+}
+
+
+.hero-wrapper {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("img/cafe1.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero {
+    max-width: 800px;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-wrapper,
+.btn {
+  width: 120px;
+  height: 30px;
+  padding: 5px 8px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-wrapper {
+  background-color: #d35833;
+  color: #131212;
+}
+
+.btn-wrapper:hover {
+  background-color: #852d01;
+  color: #ddd;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 2px solid #d33a0c;
+  color: #faf7f7;
+}
+.btn-outline:hover {
+  background-color: #dd890bea;
+  color: #f4f0f0;
+  transform: translateY(-3px);
+}
+
+/* SEÇÃO CARDÁPIO */
+
+.cardapio {
+  padding: 100px 20px;
+  background-color: #f8f5f0;
+  text-align: center;
+}
+
+.cardapio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.cardapio > p {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.menu-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.menu-grid li {
+  background-color: #fff;
+  padding: 40px 25px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.menu-grid li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.menu-grid span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.menu-grid h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #c59d5f;
+}
+
+.menu-grid p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.menu {
+  padding: 80px 8%;
+  text-align: center;
+  background: #fff;
+}
+
+.menu h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  list-style: none;
+}
+
+.grid li {
+  background: #f4f4f4;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.grid li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.grid h2 {
+  padding: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.sobre-wrapper {
+  background: #111;
+  color: #fff;
+  padding: 80px 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-wrapper {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("img/restaurant-background.avif") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.sobre {
+  max-width: 700px;
+  text-align: center;
+}
+
+.sobre h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ece5e5;
+}
+
+/* NOSSA HISTÓRIA (PRIMEIRA PARTE) */
+
+.about-section {
+  padding: 100px 8%;
+  background: #f8f8f8;
+}
+.section-content {
+  max-width: 900px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.section-content img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.section-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #111;
+}
+.section-content .text {
+  font-weight: bold;
+  color: #f93f3b;
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+
+/* FILOSOFIA */
+
+.conteiner {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.conteiner h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.conteiner p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.philosophy-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.philosophy-list li {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.philosophy-list li:hover {
+  transform: translateY(-8px);
+}
+
+.philosophy-list h3 {
+  margin-bottom: 10px;
+  color: #a86b2c;
+}
+
+.philosophy-list p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* FRASE DO CHEF */
+
+.span-tittle {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.tittle-text {
+  font-style: italic;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 15px auto;
+  color: #333;
+}
+
+.text-tittle {
+  font-weight: bold;
+  color: #a86b2c;
+}
+
+/* GALERIA - NOSSA EQUIPE */
+
+.gallery-section {
+  padding: 100px 8%;
+  background: #111;
+  text-align: center;
+  color: #fff;
+}
+
+.gallery-tittle {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.gallery-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.gallery-list li {
+  background: #454545;
+  padding: 30px 20px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.gallery-list li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+}
+
+/* FOTO REDONDA */
+.gallery-list img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #a86b2c;
+}
+
+.gallery-list h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.gallery-list p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* CONTATO */
+
+.contato {
+  padding: 100px 8%;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.contato-text {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  color: #555;
+}
+
+.grid-contato {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.grid-contato li {
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.grid-contato li:hover {
+  transform: translateY(-8px);
+}
+
+/* Ícone redondo */
+.btn-contato {
+  display: inline-block;
+  font-size: 28px;
+  background: #0d0d0dd5;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.grid-contato h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.grid-contato p {
+  color: #555;
+  margin-bottom: 8px;
+}
+/* FOOTER */
+
+footer {
+  background: #111;
+  padding: 25px;
+  text-align: center;
+}
+
+.copy {
+  color: #ccc;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cardapio {
+    padding: 70px 20px;
+  }
+
+  .cardapio h1 {
+    font-size: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu h1,
+  .sobre h1 {
+    font-size: 24px;
+  }
+
+  .grid img {
+    height: 200px;
+  }
+
+  .sobre-wrapper {
+    padding: 60px 20px;
+  }
+    .grid-contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato h2 {
+    font-size: 24px;
+  }
+
+  .contato {
+    padding: 60px 20px;
+  }
+
+    .philosophy-list {
+    grid-template-columns: 1fr;
+  }
+
+  .section-content h1,
+  .conteiner h2,
+  .sobre h1 {
+    font-size: 24px;
+  }
+
+  .section-content img {
+    max-width: 100%;
+  }
+
+  .about-section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-list {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-tittle {
+    font-size: 24px;
+  }
+}
